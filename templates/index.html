@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas del Ecuador - Bolón de Plátano Maduro con Queso</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header class="bg-header p-3">
+        <div class="container">
+            <h1 class="text-center text-white">Recetas del Ecuador</h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comidas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-3">
+        <div class="text-center">
+            <h2>Bolón de Plátano Maduro con Queso</h2>
+            <img src="{{ url_for('static', filename='img/bolon.jpg') }}" class="img-fluid img-thumbnail mx-auto d-block" alt="Bolón de Plátano Maduro con Queso">
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3>Ingredientes</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#ingredientes">Ver Ingredientes</button>
+                    </li>
+                    <div id="ingredientes" class="collapse">
+                        <li class="list-group-item">4 plátanos maduros</li>
+                        <li class="list-group-item">1 taza de queso fresco rallado</li>
+                        <li class="list-group-item">3 cucharadas de mantequilla</li>
+                        
+                    </div>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Pasos a Elaborar</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#preparacion">Ver Preparación</button>
+                    </li>
+                    <div id="preparacion" class="collapse">
+                        <li class="list-group-item">Pela los plátanos y córtalos en trozos grandes.</li>
+                        <li class="list-group-item">En una olla grande con agua hirviendo, cocina los plátanos durante unos 15-20 minutos o hasta que estén blandos.</li>
+                        <li class="list-group-item">Escurre los plátanos cocidos y colócalos en un tazón grande.</li>
+                        <li class="list-group-item">Mientras los plátanos aún estén calientes, tritúralos con un tenedor o un machacador de papas hasta obtener una masa.</li>
+                        <li class="list-group-item">Agrega la mantequilla y mezcla bien hasta que se integre por completo.</li>
+                        <li class="list-group-item">Desmenuza el queso fresco y agrégalo a la masa de plátano, mezclando bien para que el queso se distribuya uniformemente.</li>
+                        <li class="list-group-item">Con las manos, toma porciones de la mezcla y forma bolas del tamaño que desees (aproximadamente del tamaño de una pelota de tenis).</li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
